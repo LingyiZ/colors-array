@@ -8,5 +8,23 @@
 
 import Foundation
 
-print("Hello, World!")
+//declare array colors
+var colors: [String] = ["red", "orange", "yellow", "pink"]
+
+colors.removeLast();
+colors.append("green");
+let numColors = colors.count
+print("number of colors = ", numColors)
+print("colors:")
+for item in colors {
+    print(item)
+}
+let moreColors: [String] = ["blue", "purple"]
+var allColors: [String] = colors + moreColors
+print("all colors:")
+for item in allColors {
+    print(item)
+}
+
+
 
